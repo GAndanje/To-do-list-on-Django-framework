@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.andie_launch_to_do_list_server
+.andie_launch_venv
