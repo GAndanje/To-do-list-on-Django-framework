@@ -4,7 +4,9 @@
  + The web app implements the basic CRUD operations for interacting with the database.  
  + Django Class Based Views(CBVs) are used to leverage DRY practices.
 # One-liner to install this virtual environment with her dependencies
- + Run ```pip install -r requirements.txt```js in your project directory to replicate this virtual environment
+ + Run 
+ + ```pip install -r requirements.txt```js 
+ + in your project directory to replicate this virtual environment
 # App snippets
  
 
