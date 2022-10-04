@@ -1,5 +1,12 @@
-<a href="{% url 'tasklist'%}">Back</a>
-<form method="post" action="">{% csrf_token %}
-	<p>Are you sure you want to delete?</p>
-	<input type="submit" name="Delete"> <a href="../../">Cancel</a>
-</form>
+{% extends './index.html'%}
+{%block content%}
+<div class="header-bar">
+	<a href="{% url 'tasklist'%}">&#8592;Back</a>
+</div>
+<div class="card-body">
+	<form method="post" action="">{% csrf_token %}
+		<p>Are you sure you want to delete <i>{{task.title}}?</i></p>
+		<input class='button'type="submit" name="Delete" value="Delete"> <a class="button" href="../../" style="color:black">Cancel</a>
+	</form>
+</div>
+{%endblock content%}

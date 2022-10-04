@@ -1,6 +1,14 @@
+{% extends './index.html'%}
+{%block content%}
 
-<a href="{% url 'tasklist' %}">Tasks</a>
-<form method="post"	action="">{% csrf_token %}
-	{{form.as_p}}
-	<input type="submit" name="Add">
-</form>
+<div class="header-bar">
+	<a href="{% url 'tasklist'%}">&#8592;Back</a>
+</div>
+<div class="card-body">
+	<form method="post"	action="">{% csrf_token %}
+		{{form.as_p}}
+		<input class='button'type="submit" name="Add">
+	</form>
+</div>
+
+{%endblock content%}
